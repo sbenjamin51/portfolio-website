@@ -6,6 +6,47 @@ import java from '../../assets/java-icon.png'
 import python from '../../assets/python-icon.png'
 import sql from '../../assets/sql-icon.png'
 import javascript from '../../assets/javascript-icon.png'
+import react from '../../assets/react-icon.png'
+import html from '../../assets/html-icon.png'
+import css from '../../assets/css-icon.png'
+import postgresql from '../../assets/postgresql-icon.png'
+import mysql from '../../assets/mysql-icon.png'
+import git from '../../assets/git-icon.png'
+import github from '../../assets/github-icon.png'
+import vscode from '../../assets/vscode-icon.png'
+import xcode from '../../assets/xcode-icon.png'
+import figma from '../../assets/figma-icon.png'
+import intellij from '../../assets/intellij-icon.png'
+
+const languageIcons = [
+  { src: javascript, alt: 'JavaScript icon' },
+  { src: sql, alt: 'SQL icon' },
+  { src: python, alt: 'Python icon' },
+  { src: java, alt: 'Java icon' },
+]
+
+const frontendIcons = [
+  { src: react, alt: 'React icon' },
+  { src: html, alt: 'HTML icon' },
+  { src: css, alt: 'CSS icon' },
+]
+
+const backendIcons = [
+  { src: postgresql, alt: 'PostgreSQL icon' },
+  { src: mysql, alt: 'MySQL icon' },
+]
+
+const toolIcons1 = [
+  { src: git, alt: 'Git icon' },
+  { src: github, alt: 'GitHub icon' },
+  { src: vscode, alt: 'VSCode icon' },
+]
+
+const toolIcons2 = [
+  { src: xcode, alt: 'Xcode icon' },
+  { src: figma, alt: 'Figma icon' },
+  { src: intellij, alt: 'IntelliJ icon' },
+]
 
 
 
@@ -48,15 +89,52 @@ const AboutMe = () => {
           </div>
 
           <div className='skills'>
-            <h2 className='skills-title'>Skills</h2>
             <h3 className='languages-title'>Languages</h3>
             <div className='languages'>
-              <div className='icon-container'><img src={javascript} alt="javascript-icon" /></div>
-              <div className='icon-container'><img src={sql} alt="sql-icon" /></div>
-              <div className='icon-container'><img src={python} alt="python-icon" /></div>
-              <div className='icon-container'><img src={java} alt="java-icon" /></div>
+              {languageIcons.map((icon) => (
+                <div className='icon-container' key={icon.alt}>
+                  <img src={icon.src} alt={icon.alt} />
+                </div>
+              ))}
             </div>
-          </div>
+
+            <h3 className='frontend-title'>Frontend</h3>
+            <div className='frontend'>
+              {frontendIcons.map((icon) => (
+                <div className='icon-container' key={icon.alt}>
+                  <img src={icon.src} alt={icon.alt} />
+                </div>
+              ))}
+            </div>
+
+            <h3 className='backend-title'>Backend</h3>
+            <div className='backend'>
+              {backendIcons.map((icon) => (
+                <div className='icon-container' key={icon.alt}>
+                  <img src={icon.src} alt={icon.alt} />
+                </div>
+              ))}
+            </div>
+
+         
+
+            <h3 className='tools-title'>Tools</h3>
+            <div className='tools1'>
+              {toolIcons1.map((icon) => (
+                <div className='icon-container' key={icon.alt}>
+                  <img src={icon.src} alt={icon.alt} />
+                </div>
+              ))}
+            </div>
+            <div className='tools2'>
+              {toolIcons2.map((icon) => (
+                <div className='icon-container' key={icon.alt}>
+                  <img src={icon.src} alt={icon.alt} />
+                </div>
+              ))}
+            </div>
+
+           </div>
           </section>
     </div>
   )
