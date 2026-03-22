@@ -18,6 +18,7 @@ const Home = () => {
         <div className='hero-buttons'>
           <a href="/projects" className="projects-btn fade-in delay-5">View Projects</a>
           <a href="/aboutme" className="about-me-btn fade-in delay-6">About Me</a>
+          <a href="/finalResume.pdf" download className="cv-btn fade-in delay-7">Download CV</a>
         </div>
 
         </div>

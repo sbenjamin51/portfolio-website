@@ -19,33 +19,33 @@ import figma from '../../assets/figma-icon.png'
 import intellij from '../../assets/intellij-icon.png'
 
 const languageIcons = [
-  { src: javascript, alt: 'JavaScript icon' },
-  { src: sql, alt: 'SQL icon' },
-  { src: python, alt: 'Python icon' },
-  { src: java, alt: 'Java icon' },
+  { src: javascript, alt: 'JavaScript icon', label: 'JavaScript' },
+  { src: sql, alt: 'SQL icon', label: 'SQL' },
+  { src: python, alt: 'Python icon', label: 'Python' },
+  { src: java, alt: 'Java icon', label: 'Java' },
 ]
 
 const frontendIcons = [
-  { src: react, alt: 'React icon' },
-  { src: html, alt: 'HTML icon' },
-  { src: css, alt: 'CSS icon' },
+  { src: react, alt: 'React icon', label: 'React.js' },
+  { src: html, alt: 'HTML icon', label: 'HTML' },
+  { src: css, alt: 'CSS icon', label: 'CSS' },
 ]
 
 const backendIcons = [
-  { src: postgresql, alt: 'PostgreSQL icon' },
-  { src: mysql, alt: 'MySQL icon' },
+  { src: postgresql, alt: 'PostgreSQL icon', label: 'PostgreSQL' },
+  { src: mysql, alt: 'MySQL icon', label: 'MySQL' },
 ]
 
 const toolIcons1 = [
-  { src: git, alt: 'Git icon' },
-  { src: github, alt: 'GitHub icon' },
-  { src: vscode, alt: 'VSCode icon' },
+  { src: git, alt: 'Git icon', label: 'Git' },
+  { src: github, alt: 'GitHub icon', label: 'GitHub' },
+  { src: vscode, alt: 'VSCode icon', label: 'VSCode' },
 ]
 
 const toolIcons2 = [
-  { src: xcode, alt: 'Xcode icon' },
-  { src: figma, alt: 'Figma icon' },
-  { src: intellij, alt: 'IntelliJ icon' },
+  { src: xcode, alt: 'Xcode icon', label: 'Xcode' },
+  { src: figma, alt: 'Figma icon', label: 'Figma' },
+  { src: intellij, alt: 'IntelliJ icon', label: 'IntelliJ' },
 ]
 
 
@@ -60,7 +60,7 @@ const AboutMe = () => {
             <img src={selfpic} alt="profile" />
           </div>
               <div className='about-text1'>
-                  <h3 className='introduction'> building clean, responsive <br/>
+                  <h3 className='introduction'> Building clean, responsive <br/>
                    applications and solving <br/> real-world problems using code.</h3>
               </div>
           
@@ -94,6 +94,7 @@ const AboutMe = () => {
               {languageIcons.map((icon) => (
                 <div className='icon-container' key={icon.alt}>
                   <img src={icon.src} alt={icon.alt} />
+                  <span className='icon-tooltip'>{icon.label}</span>
                 </div>
               ))}
             </div>
@@ -103,6 +104,7 @@ const AboutMe = () => {
               {frontendIcons.map((icon) => (
                 <div className='icon-container' key={icon.alt}>
                   <img src={icon.src} alt={icon.alt} />
+                  <span className='icon-tooltip'>{icon.label}</span>
                 </div>
               ))}
             </div>
@@ -112,6 +114,7 @@ const AboutMe = () => {
               {backendIcons.map((icon) => (
                 <div className='icon-container' key={icon.alt}>
                   <img src={icon.src} alt={icon.alt} />
+                  <span className='icon-tooltip'>{icon.label}</span>
                 </div>
               ))}
             </div>
@@ -123,6 +126,7 @@ const AboutMe = () => {
               {toolIcons1.map((icon) => (
                 <div className='icon-container' key={icon.alt}>
                   <img src={icon.src} alt={icon.alt} />
+                  <span className='icon-tooltip'>{icon.label}</span>
                 </div>
               ))}
             </div>
@@ -130,10 +134,17 @@ const AboutMe = () => {
               {toolIcons2.map((icon) => (
                 <div className='icon-container' key={icon.alt}>
                   <img src={icon.src} alt={icon.alt} />
+                  <span className='icon-tooltip'>{icon.label}</span>
                 </div>
               ))}
             </div>
 
+           </div>
+
+           <div className='hobbies'>
+            <h3 className='hobbies-p'>When I'm not immersed in my school work, I enjoy watching and playing <br />
+            sports, especially soccer, hanging out with friends, and playing <br />
+            video games such as Pokemon and MLB The Show.</h3>
            </div>
           </section>
     </div>

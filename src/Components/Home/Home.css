@@ -50,45 +50,31 @@ body {
 .hero-buttons {
   display: flex;
   gap: 100px;
-  padding-left: 50px;
+  padding-left: 0px;
   padding-top: 40px;
 }
 
 .projects-btn,
-.about-me-btn {
+.about-me-btn,
+.cv-btn {
   text-decoration: none;
   padding: 14px 28px;
   border-radius: 8px;
   font-weight: bold;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   display: inline-block;
 }
 
-.projects-btn {
-  display: inline-block;
-  background-color: #9999ff;
-  color: black;
-  border: 2px solid #9999ff;
-  text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
-}
-
-.projects-btn:hover {
-  background-color: black;
-  color: #9999ff;
-  border: 2px solid #9999ff;
-  transform: scale(1.05);
-}
-
-.about-me-btn {
+.projects-btn,
+.about-me-btn,
+.cv-btn {
   border: 2px solid #9999ff;
   color: #9999ff;
 }
 
-.about-me-btn:hover {
+.projects-btn:hover,
+.about-me-btn:hover,
+.cv-btn:hover {
   background-color: #9999ff;
   color: black;
   transform: scale(1.05);
@@ -123,11 +109,15 @@ body {
 }
 
 .delay-5 {
-  animation-delay: 0.8s;
+  animation-delay: 0.9s;
 }
 
 .delay-6 {
   animation-delay: 1s;
+}
+
+.delay-7 {
+  animation-delay: 1.1s;
 }
 
 @keyframes fadeInUp {

@@ -133,6 +133,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   width: 116px;
   height: 116px;
   padding: 18px;
@@ -146,6 +147,27 @@ body {
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.icon-tooltip {
+  position: absolute;
+  bottom: -42px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #4b5563;
+  color: #f9fafb;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.icon-container:hover .icon-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(4px);
 }
 
 @media (max-width: 900px) {
@@ -227,4 +249,25 @@ body {
   width: 100%;
   min-height: 116px;
   justify-content: center;
+}
+
+.tools2 {
+  margin-top: 30px;
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 80px;
+  width: 100%;
+  border-bottom: 1px solid #9999ff;
+}
+
+.hobbies-p {
+  font-size: 25px;
+  color: #9999ff;
+  padding-top: 20px;
 }
