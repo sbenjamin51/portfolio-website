@@ -26,10 +26,9 @@ nav ul li{
 
 .btn,
 .btn-home {
-  display: inline-flex;        /* key change */
-  align-items: center;         /* vertical alignment */
-  gap: 8px;                    /* space between icon and text */
-  
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 16px;
   cursor: pointer;
   border: 0;
@@ -41,19 +40,16 @@ nav ul li{
 }
 
 .btn:hover {
-  /* transform: scale(1.20); */
   color: #f8f9fb;
-
 }
 
 .btn-home:hover {
-  /* transform: scale(1.20); */
   color: #f8f9fb;
-
 }
 
 .nav-right {
     display: flex;
+    flex-wrap: wrap;
     gap: 100px;
 }
 
@@ -72,4 +68,50 @@ nav ul li{
   height: 25px;
   object-fit: contain;
   padding-bottom: 3px;
+}
+
+@media (max-width: 900px) {
+  nav {
+    height: auto;
+    min-height: 80px;
+    padding: 14px 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .nav-right {
+    gap: 28px;
+  }
+
+  .nav-left {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 12px 18px;
+    justify-content: center;
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-right {
+    gap: 18px;
+  }
+
+  .btn,
+  .btn-home {
+    font-size: 14px;
+  }
+
+  .btn img,
+  .btn-home img {
+    width: 22px;
+    height: 22px;
+  }
 }
