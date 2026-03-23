@@ -54,7 +54,7 @@ const AboutMe = () => {
     <div>
       <Navbar />
       <section className="about">
-        <div className="pic-text">
+        <div className="pic-text intro-row">
           <div className="pic-container">
             <img src={selfpic} alt="profile" />
           </div>
@@ -147,7 +147,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="pic-text">
+        <div className="pic-text hobbies-row">
           <div className="hobbies-container">
             <img src={rayquaza} alt="rayquaza-pic" className="rayquaza-pic" />
           </div>

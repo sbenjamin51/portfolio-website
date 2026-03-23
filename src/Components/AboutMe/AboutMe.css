@@ -32,6 +32,10 @@ body {
   padding-top: 20px;
 }
 
+.about-text1 {
+  max-width: 520px;
+}
+
 .pic-container {
   object-fit: cover;
   display: flex;
@@ -50,13 +54,17 @@ body {
 }
 
 .pic-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
   padding: 0 8% 80px;
   width: 100%;
   border-bottom: 1px solid #9999ff;
+}
+
+.intro-row {
+  display: grid;
+  grid-template-columns: minmax(280px, 350px) minmax(320px, 520px);
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
 }
 
 .intro-paragraph {
@@ -76,20 +84,8 @@ body {
 .paragraph4 {
   font-size: 25px;
   color: #9999ff;
-  padding-top: 20px;
 }
 
-.paragraph2 {
-  padding-right: 30px;
-}
-
-.paragraph3 {
-  padding-right: 30px;
-}
-
-.paragraph4 {
-  padding-left: 21px;
-}
 
 .intro-paragraph p {
   max-width: 900px;
@@ -205,7 +201,8 @@ body {
   padding-top: 20px;
   font-weight: 400;
   margin: 0;
-  max-width: 720px;
+  flex: 1 1 620px;
+  max-width: 840px;
   line-height: 1.6;
 }
 
@@ -214,6 +211,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hobbies-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 175px) minmax(320px, 840px);
+  justify-content: center;
+  align-items: center;
+  column-gap: 32px;
 }
 
 .rayquaza-pic {
@@ -252,9 +257,11 @@ body {
     padding-top: 130px;
   }
 
-  .pic-text {
+  .intro-row,
+  .hobbies-row {
     flex-direction: column;
     text-align: center;
+    display: flex;
     gap: 28px;
     padding-bottom: 64px;
   }
