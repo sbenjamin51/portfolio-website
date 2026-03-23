@@ -2,6 +2,7 @@ import React from 'react'
 import './AboutMe.css'
 import Navbar from '../Navbar/Navbar'
 import selfpic from '../../assets/aboutme-page-pic.JPG'
+import rayquaza from '../../assets/rayquaza-pic.png'
 import java from '../../assets/java-icon.png'
 import python from '../../assets/python-icon.png'
 import sql from '../../assets/sql-icon.png'
@@ -141,7 +142,10 @@ const AboutMe = () => {
 
            </div>
 
-           <div className='hobbies'>
+           <div className='pic-text'>
+            <div className='hobbies-container'>
+              <img src={rayquaza} alt="rayquaza-pic" className='rayquaza-pic' />
+            </div>
             <h3 className='hobbies-p'>When I'm not immersed in my school work, I enjoy watching and playing <br />
             sports, especially soccer, hanging out with friends, and playing <br />
             video games such as Pokemon and MLB The Show.</h3>

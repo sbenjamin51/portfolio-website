@@ -270,4 +270,22 @@ body {
   font-size: 25px;
   color: #9999ff;
   padding-top: 20px;
+  font-weight: 400;
+}
+
+.hobbies-container {
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.rayquaza-pic {
+  width: 175px;
+  height: auto;
+   object-fit: cover;
+   padding: 0px 0px 0px 0px;
+   display: block;
+   margin: 0 auto;
+   border-radius: 20px;
 }
