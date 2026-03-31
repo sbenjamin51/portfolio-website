@@ -18,6 +18,7 @@ import vscode from '../../assets/vscode-icon.png'
 import xcode from '../../assets/xcode-icon.png'
 import figma from '../../assets/figma-icon.png'
 import intellij from '../../assets/intellij-icon.png'
+import mongodb from '../../assets/mongodb-icon.png'
 
 const languageIcons = [
   { src: javascript, alt: 'JavaScript icon', label: 'JavaScript' },
@@ -35,6 +36,7 @@ const frontendIcons = [
 const backendIcons = [
   { src: postgresql, alt: 'PostgreSQL icon', label: 'PostgreSQL' },
   { src: mysql, alt: 'MySQL icon', label: 'MySQL' },
+  { src: mongodb, alt: 'MongoDB icon', label: 'MongoDB' },
 ]
 
 const toolIcons1 = [
