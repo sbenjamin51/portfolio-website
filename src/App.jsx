@@ -7,7 +7,7 @@ import Projects from './Components/Projects/Projects'
 import Skills from './Components/Skills/Skills';
 import ContactMe from './Components/ContactMe/ContactMe';
 
-
+// Centralizes route definitions so each page renders inside the shared background.
 const App = () => {
   return (
    <BrowserRouter>

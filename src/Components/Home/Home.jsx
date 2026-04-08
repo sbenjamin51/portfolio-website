@@ -4,6 +4,7 @@ import './Home.css'
 import headshot from '../../assets/headshot.JPG'
 import Navbar from '../Navbar/Navbar'
 
+// The landing page introduces the portfolio owner and points visitors to the main next steps.
 const Home = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const Home = () => {
           </p>
 
           <div className="hero-buttons">
+            {/* Primary actions keep the home page focused on exploration and resume access. */}
             <Link to="/projects" className="projects-btn fade-in delay-5">
               View Projects
             </Link>

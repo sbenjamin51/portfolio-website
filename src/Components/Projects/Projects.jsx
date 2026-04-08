@@ -2,6 +2,7 @@ import React from 'react'
 import './Projects.css'
 import Navbar from '../Navbar/Navbar'
 
+// Featured projects are defined as data so new cards can be added with minimal JSX changes.
 const projects = [
   {
     title: 'Capstone Golf App',
@@ -23,6 +24,7 @@ const projects = [
   },
 ]
 
+// Highlights portfolio projects with concise summaries, tech stacks, and outbound links.
 const Projects = () => {
   return (
     <div>

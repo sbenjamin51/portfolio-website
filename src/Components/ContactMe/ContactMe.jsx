@@ -2,6 +2,7 @@ import React from 'react'
 import './ContactMe.css'
 import Navbar from '../Navbar/Navbar'
 
+// Contact methods are stored as data so labels, URLs, and cards stay in sync.
 const contactLinks = [
   {
     label: 'Email',
@@ -30,6 +31,7 @@ const contactLinks = [
   },
 ]
 
+// Gives recruiters and collaborators a clear way to reach out from one page.
 const ContactMe = () => {
   return (
     <div>

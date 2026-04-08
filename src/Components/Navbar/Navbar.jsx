@@ -6,7 +6,7 @@ import aboutmeicon from '../../assets/about-me-icon.png'
 import contact from '../../assets/contact-icon.png'
 import picon from '../../assets/projects-icon.png'
 
-
+// Shared navigation stays consistent across routes so visitors can move around quickly.
 const Navbar = () => {
   return (
     <nav>
@@ -24,4 +24,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-

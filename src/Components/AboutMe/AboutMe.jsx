@@ -20,6 +20,7 @@ import figma from '../../assets/figma-icon.png'
 import intellij from '../../assets/intellij-icon.png'
 import mongodb from '../../assets/mongodb-icon.png'
 
+// These grouped icon lists power the repeated skill sections below without duplicating markup.
 const languageIcons = [
   { src: javascript, alt: 'JavaScript icon', label: 'JavaScript' },
   { src: sql, alt: 'SQL icon', label: 'SQL' },
@@ -51,6 +52,7 @@ const toolIcons2 = [
   { src: intellij, alt: 'IntelliJ icon', label: 'IntelliJ' },
 ]
 
+// The About page combines a written introduction with categorized technologies and personal interests.
 const AboutMe = () => {
   return (
     <div>
@@ -100,6 +102,7 @@ const AboutMe = () => {
         </div>
 
         <div className="skills">
+          {/* Each section maps over shared icon metadata to keep updates simple and consistent. */}
           <h3 className="languages-title">Languages</h3>
           <div className="languages">
             {languageIcons.map((icon) => (
